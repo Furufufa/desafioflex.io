@@ -1,0 +1,173 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+#contactos {
+    width: 30%;
+    overflow-y: auto; 
+    padding: 0;
+}
+
+.activa{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-left: 0;
+    border-bottom: 1px solid #E8EBE4;
+
+}
+.activa img{
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.identificación {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    
+}
+.texto_chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.texto_chat h3 {
+    justify-content: center;
+    margin: 0;
+    
+   
+}
+
+.texto_chat p {
+    margin: 0;
+    color: #828485;
+    justify-content: center;
+    
+}
+
+.chat {
+    display: flex;
+    justify-content: start;
+}
+.chat1, .chat2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.fa-message, .fa-bars {
+    font-size: 1.2em;
+    color: #828485; 
+}
+
+.container1, .container2 {
+    margin-bottom: 30px;
+}
+
+.botón {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.botoncito {
+    padding: 10px 30px;
+    background-color: #A491D2;
+    color: FFF; 
+    border: 2px solid transparent; 
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.botoncito a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.inac {
+    display: flex;
+    align-items: center;
+    border: 1px solid #BEC1BB;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.inac img {
+    width: 50px; 
+    border-radius: 50%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.inac h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.inac p {
+    margin: 0;
+    font-weight: lighter;
+    font-size: small;
+}
+
+
+#principal {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.corporativo img {
+    max-width: 35%;
+    height: auto;
+    margin:auto;
+    border-radius: 5%;
+    border: 2px solid transparent;
+}
+
+#principal h1 {
+    font-size: 45px;
+    font-family: "Open sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+#principal p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #contactos, #principal {
+        width: 100%;
+    }
+}
